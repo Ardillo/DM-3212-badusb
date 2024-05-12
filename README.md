@@ -69,7 +69,7 @@ Then open the *esp_duck* directory and open the *esp_duck.ino* file with the Ard
 #define ENABLE_SERIAL
 ```
 This will enable the serial connection between the ESP-12E module and the AtMega32u4 on the side of the ESP module.
-Then run **Upload** in the Arduino IDE, since the serial is in passthrough this don't need extra tooling and should work fine with the built-in esptool.py script.
+Then run **Upload** in the Arduino IDE, since the serial is in passthrough this doesn't need extra tooling and should work fine with the built-in esptool.py script.
 
 # firmware AtMega32u4
 
@@ -83,7 +83,7 @@ Open the *atmega_duck* directory and the *atmega_duck.ino* file and select the b
 #define SERIAL_COM Serial1
 #define SERIAL_BAUD 9600
 ```
-This will enable the **Serial1** on the side of the AtMega connected to the ESP-12E module. This is used by the ESP to send commands to the AtMega such that they are can be send as HID commands.
+This will enable the **Serial1** on the side of the AtMega connected to the ESP-12E module. This is used by the ESP to send commands to the AtMega such that they can be send as HID commands using the USB interface.
 
 # References
 
